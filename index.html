@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Coach's Name - Real Nutrition & Fitness Coaching</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            line-height: 1.6; 
+            color: #4A4A4A; 
+            background: #F5F0E1; 
+            overflow-x: hidden;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 80px 0; }
+        h1, h2 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        p { font-size: 1.1rem; margin-bottom: 1.5rem; max-width: 600px;  }
+        .btn { 
+            display: inline-block; padding: 16px 32px; background: #E2725B; color: white; 
+            text-decoration: none; border-radius: 50px; font-weight: 600; 
+            transition: all 0.3s; font-size: 1.1rem; 
+        }
+        .btn:hover { background: #D55A44; transform: translateY(-2px); }
+        .hero { background: linear-gradient(135deg, #A8B5A2 0%, #E2725B 100%); color: white; text-align: center; padding: 120px 0; }
+        .hero h1 { color: white; font-size: clamp(2.5rem, 6vw, 4rem); }
+        .hero p { font-size: 1.3rem; opacity: 0.95; }
+        .cards { display: grid; gap: 2rem; grid-template-columns: 1fr; }
+        @media (min-width: 768px) { .cards { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
+        .card { 
+            background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            border: 1px solid #F0EDE8; transition: transform 0.3s; 
+        }
+        .card:hover { transform: translateY(-5px); }
+        .myth-card { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+        @media (max-width: 768px) { .myth-card { grid-template-columns: 1fr; gap: 1rem; } }
+        .myth-fear { font-style: italic; color: #6B7280; font-size: 1.1rem; }
+        .myth-response { font-weight: 600; color: #E2725B; }
+        .testimonial { background: #F8F6F2; border-left: 4px solid #E2725B; padding: 1.5rem; margin-bottom: 1rem; }
+        .meta { font-size: 0.9rem; color: #A8B5A2; font-style: italic; }
+        footer { background: #A8B5A2; color: white; text-align: center; padding: 40px 0; }
+        a { color: #E2725B; }
+        /* Animations */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        section { animation: fadeInUp 0.8s ease-out; }
+    </style>
+</head>
+<body>
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>You didn't fail. The plan failed you.</h1>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 4rem;"> Crash diets that left you starving and guilty. Emotional eating when life hits hard. That "what's the point" feeling after another failed try. I've been there. Let's fix what's actually broken.</p>
+            <a href="#book" class="btn">Book a Free Discovery Call</a>
+        </div>
+    </section>
+
+    <section id="who">
+        <div class="container">
+            <h2 style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">This is for you if...</h2>
+            <div class="cards">
+                <div class="card"><p>"I've tried everything and nothing works."</p></div>
+                <div class="card"><p>"I eat when I'm stressed, sad, or bored — and I hate myself for it."</p></div>
+                <div class="card"><p>"I have PCOS/prediabetes/high cholesterol and I don't know where to start."</p></div>
+                <div class="card"><p>"I'm an NRI trying to stay healthy far from home, with different food, different stress."</p></div>
+                <div class="card"><p>"I will put on weight as I age."</p></div>
+                <div class="card"><p>"I can not stay consistent beyond a week."</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background: #F8F6F2;">
+        <div class="container">
+            <h2 style="text-align: center;">Hey, I'm Aditi Tapi</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 4rem;">INFS certified nutrition and fitness coach. But more than that — I've lived through trauma, loss, divorce, raising a young kid alone, job stress, and COVID. I know what it's like when your body and mind are both running on empty. I use the psychology and physiology behind your habits and behaviors — and I work to break them. Sometimes with love. Sometimes with kindness. Sometimes with a little push. Whatever you need.</p>
+        </div>
+    </section>
+
+    <section id="myths">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">Before you talk yourself out of it — I've heard it all. Here's the truth.</h2>
+            <div class="cards">
+                <div class="card myth-card">
+                    <div class="myth-fear">"I won't eat soup and salad every day."</div>
+                    <div class="myth-response">Good. Because I'm not going to ask you to. Real food. Real meals. That's the whole point.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I can't cook separately for myself."</div>
+                    <div class="myth-response">You won't have to. We work with what's already on your table.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I can't go to the gym."</div>
+                    <div class="myth-response">You don't have to. Movement looks different for everyone. We'll find yours.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I travel a lot. I can't follow a plan."</div>
+                    <div class="myth-response">That's exactly why we'll build one that travels with you.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I'm a vegetarian."</div>
+                    <div class="myth-response">So are a lot of my clients. Not a problem. Not even close.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I won't have protein powder."</div>
+                    <div class="myth-response">Fine. There's food for that too.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I just can't control myself around food."</div>
+                    <div class="myth-response">That's not a willpower problem. That's a habit and emotion problem. And that's exactly what we work on.</div>
+                </div>
+                <div class="card myth-card">
+                    <div class="myth-fear">"I'm not giving up my favourite foods."</div>
+                    <div class="myth-response">I'd never ask you to. Food is joy. We're not taking that away — we're just changing the relationship.</div>
+                </div>
+                <div class="card myth-card">
+                    
+                    <div class="myth-fear">"I'll fall off the plan — after a week, during vacations, during my kid's exams."</div>
+                    <div class="myth-response">Everyone does. That's not failure — that's life. We plan for the falls. We just make sure you know how to get back up, every single time. That's the actual work.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">My Programs</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Weight Loss Program (For Men, Women & NRIs)</h3>
+                    <p><strong>"Not another diet. A way of living you can actually keep."</strong></p>
+                    <p>Whether you're in India or abroad, dealing with emotional eating or just stuck in a plateau — this is built around your real life, not an ideal one.</p>
+                </div>
+                <div class="card">
+                    <h3>Hormones, Metabolism & Women's Health</h3>
+                    <p><strong>"For when your body feels like it's working against you."</strong></p>
+                    <p>Covers PCOS, insulin resistance, prediabetes and high lipid profiles. Because these rarely come alone — and they all need to be looked at together.</p>
+                </div>
+                <div class="card">
+                    <h3>Men's Metabolic Health Program</h3>
+                    <p><strong>"Quietly ignored for too long."</strong></p>
+                    <p>High cholesterol, prediabetes, weight that won't shift — for men who are done waiting for things to get worse before doing something about it.</p>
+                </div>
+                <div class="card">
+                    <h3>Kids & Family Wellness</h3>
+                    <p><strong>"Healthy homes start somewhere."</strong></p>
+                    <p>Building good habits early — for kids and the whole family. No diets, no drama, just a healthier way of living together.</p>
+                </div>
+                <div class="card">
+                    <h3>Healthy Ageing Program (Senior Citizens, India)</h3>
+                    <p><strong>"It's not too late. It never is."</strong></p>
+                    <p>Gentle, practical, and realistic — for those who've been told this is just what getting older feels like.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="how" style="background: #F8F6F2;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">How I Work</h2>
+            <div style="display: grid; gap: 2rem; max-width: 700px; margin: 0 auto;">
+                <div class="card"><p>I look at the why behind your habits, not just the what.</p></div>
+                <div class="card"><p>I build plans around your real life — not some ideal version of it.</p></div>
+                <div class="card"><p>I hold space for your setbacks, because setbacks are part of it.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">What People Say</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="testimonial">"I'd tried keto, intermittent fasting, everything. She didn't give me another diet. She helped me understand why I kept quitting."</div>
+                    <p class="meta">Priya, Dubai</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial">"Finally, someone who gets the NRI struggle. No more guilt over takeout. My PCOS symptoms are way down."</div>
+                    <p class="meta">Aisha, London</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial">"As a guy, I felt ignored. This reversed my cholesterol without pills. Straight talk, real changes."</div>
+                    <p class="meta">Rahul, Toronto</p>
+                </div>
+                <div class="card">
+                    <div class="testimonial">"Stress eating was my thing. Now I handle it without hating myself. She's like the friend I needed."</div>
+                    <p class="meta">Vikram, Bangalore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="corporate">
+        <div class="container" style="text-align: center;">
+            <h2>Corporates</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 4rem;">Are you a company that actually cares about your team's health? I offer talks, workshops, and wellness programs for corporate teams. Let's connect.</p>
+            <a href="#book" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="book" style="background: linear-gradient(135deg, #E2725B 0%, #A8B5A2 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2>Not sure if this is for you? That's okay.</h2>
+            <p style="text-align: center; font-size: 1.2rem; max-width: 700px; margin: 0 auto 4rem;">Book a free 20-minute call. We'll talk. No pitch, no pressure. Just real talk about what's going on with you.</p>
+            <a href="https://calendar.app.google/HrvYu1Y5qSCDEnfE6" class="btn" style="background: white; color: #E2725B;">Book Your Free Call</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 [Aditi Tapi]. Helping you feel like yourself again. <a href="#hero" style="color:>
